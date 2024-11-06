@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Providers from "./Providers";
+import { Tajawal } from "next/font/google";
+
+const tajawal = Tajawal({
+  subsets: ["arabic"],
+  weight: ["400", "500", "700"], // Include the weights you need
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,9 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${tajawal.className}`}
       >
         <Providers>{children}</Providers>
       </body>
