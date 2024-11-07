@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import rightImg from "@/public/images/help.png";
+import rightImg from "@/public/images/help.svg";
 // import redDot from "@/public/images/redDot.svg";
 const ForWhoSec = () => {
   const items = [

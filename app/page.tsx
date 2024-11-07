@@ -10,7 +10,7 @@ import WhySec from "./components/WhySec";
 
 export default function Home() {
   return (
-    <main dir="rtl" className="container [font-family:Tajawal] ">
+    <main dir="rtl" className="[font-family:Tajawal] ">
       <Header />
       <HeroSec />
       <WhySec />

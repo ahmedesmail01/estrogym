@@ -25,7 +25,7 @@ const WhySec = () => {
         <div className="p-2 border border-red-500 w-fit rounded-full ">
           <div className=" lg:w-[400px] w-[280px] lg:h-[400px] h-[280px] rounded-full  ">
             <Image
-              src={"/estro-gym/images/for-whom-this.png"}
+              src={"/estro-gym/images/for-whom-this.svg"}
               alt=""
               className="w-full h-full rounded-full object-cover"
               width={100}
