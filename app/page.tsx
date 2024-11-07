@@ -1,3 +1,4 @@
+"use client";
 import AboutDoc from "./components/AboutDoc";
 import Footer from "./components/Footer";
 import ForWhoSec from "./components/ForWhoSec";

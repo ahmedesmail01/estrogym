@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const WhySec = () => {
@@ -22,7 +23,15 @@ const WhySec = () => {
           </p>
         </div>
         <div className="p-2 border border-red-500 w-fit rounded-full ">
-          <div className="bg-[#c4c4c4] lg:w-[400px] w-[280px] lg:h-[400px] h-[280px] rounded-full  "></div>
+          <div className=" lg:w-[400px] w-[280px] lg:h-[400px] h-[280px] rounded-full  ">
+            <Image
+              src={"/estro-gym/images/for-whom-this.png"}
+              alt=""
+              className="w-full h-full rounded-full object-cover"
+              width={100}
+              height={100}
+            />
+          </div>
         </div>
       </div>
     </div>

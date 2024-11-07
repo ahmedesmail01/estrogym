@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import rightImg from "@/public/images/Rectangle 4 (1).svg";
+import rightImg from "@/public/images/help.png";
 // import redDot from "@/public/images/redDot.svg";
 const ForWhoSec = () => {
   const items = [
@@ -17,8 +17,14 @@ const ForWhoSec = () => {
         لمن هذا البرنامج؟
       </h1>
       <div className="  flex flex-col-reverse  lg:flex-row lg:gap-[96px] justify-around items-center  ">
-        <Image src={rightImg} alt="image" />
-        <div className="lg:px-4">
+        <div className="flex-1">
+          <Image
+            src={rightImg}
+            alt="image"
+            className="max-h-[841px] object-cover"
+          />
+        </div>
+        <div className=" flex-1">
           <div>
             <h2 className="mb-8 text-[#242424] lg:text-right text-center [font-family:Tajawal] text-xl lg:text-[32px]  font-bold leading-[160%]">
               <span className="text-[#5c56a0]">استروجيم</span> يساعدك علي
@@ -37,7 +43,7 @@ const ForWhoSec = () => {
                 <div className="w-[22px] h-[22px] rounded-full bg-[#e84e46]"></div>
                 <p
                   key={index}
-                  className="lg:w-[463px] w-full mb-3 lg:mb-6 text-[#242424] text-right text-lg font-normal leading-[160%]"
+                  className=" w-full mb-3 lg:mb-6 text-[#242424] text-right text-lg font-normal leading-[160%]"
                 >
                   {item}
                 </p>

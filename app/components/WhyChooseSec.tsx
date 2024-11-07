@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import group from "@/public/images/Group 1.png";
+import group from "@/public/images/Group 2f.png";
 import oneIcon from "@/public/images/iconOne.svg";
 import twoIcon from "@/public/images/iconTwo.svg";
 import threeIcon from "@/public/images/iconThree.svg";

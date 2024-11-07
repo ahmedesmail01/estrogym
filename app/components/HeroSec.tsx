@@ -1,10 +1,13 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import courseLogo from "@/public/images/estrogym-logo.svg";
-import videoPlace from "@/public/images/video-place.svg";
+import dynamic from "next/dynamic";
+
+const PlyrVideo = dynamic(() => import("./PlyrVideo"), { ssr: false });
 const HeroSec = () => {
   return (
-    <div className="flex flex-col  lg:flex-row px-2  justify-between items-center lg:px-[145px] pt-6 [background:linear-gradient(278deg,#9C96C5_-0.01%,rgba(255,255,255,0.00)_99.01%)] pb-[126px]">
+    <div className="flex flex-col gap-y-8 lg:flex-row px-2  justify-between items-center lg:px-[145px] pt-6 [background:linear-gradient(278deg,#9C96C5_-0.01%,rgba(255,255,255,0.00)_99.01%)] pb-[126px]">
       <div className="flex flex-col items-center px-2 justify-center ">
         <Image
           src={courseLogo}
@@ -25,14 +28,8 @@ const HeroSec = () => {
           </button>
         </a>
       </div>
-      <div>
-        <Image
-          src={videoPlace}
-          alt="video place"
-          width={505}
-          height={324}
-          className="w-[360px] h-[324px] lg:h-[324px] lg:w-[505px]"
-        />
+      <div className="flex justify-center items-center gap-1  h-[348px] w-[505px] max-w-full rounded-2xl">
+        <PlyrVideo />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const AboutDoc = () => {
           {items.map((item, index) => (
             <p
               key={index}
-              className="lg:w-[612px] mb-3 lg:mb-6 text-[#242424] text-right text-xl lg:text-xl font-normal leading-[160%]"
+              className="lg:w-[612px] max-w-full mb-3 lg:mb-6 text-[#242424] text-right text-xl lg:text-xl font-normal leading-[160%]"
             >
               {item}
             </p>
