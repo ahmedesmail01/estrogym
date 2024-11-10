@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import backImg from "@/public/images/purple-flowers 1.svg";
-import doc from "@/public/images/dr-ahmed-img.svg";
+import doc from "@/public/images/dr-ahmed-img.png";
 
 const AboutDoc = () => {
   const items = [
@@ -21,7 +21,13 @@ const AboutDoc = () => {
         alt="back image"
         className="absolute w-full h-full object-cover  left-0"
       />
-      <Image src={doc} alt="doc ahmed" />
+      <Image
+        src={doc}
+        alt=""
+        width={507}
+        height={507}
+        className="!w-[507px] h-[320px] lg:h-[507px] max-w-full"
+      />
       <div className="lg:px-4">
         <h1 className="lg:mb-10 mb-8 text-[#5C56A0] text-right  text-[32px]  font-bold leading-[160%]">
           د.أحمد الدملاوي
