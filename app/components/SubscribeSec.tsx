@@ -7,6 +7,13 @@ const SubscribeSec = () => {
   const { data } = useSWR("estro-gym/packages", fetchData);
   const packages: Package[] = data?.data?.data || [];
 
+  const projects_map: { [key: number]: string } = {
+    0: "estrogym_100$_TGS",
+    1: "estrogym_270$_TGS",
+    2: "estrogym_490$_TGS",
+    3: "estrogym_900$_TGS",
+  };
+
   return (
     <div id="subscribe" className="lg:mb-[96px] mb-10">
       <h1 className=" mb-4 text-[color:var(--www\_getfinvest\_com\_\_1440x761-Black-Pearl,#071A34)] text-center [font-family:Tajawal] text-[42px] font-extrabold leading-[normal]">
@@ -15,7 +22,7 @@ const SubscribeSec = () => {
       <p className="mb-[52px] text-[color:var(--gray-scale-gray-600,var(--gray-scale-gray-600,#4B5563))] text-center [font-family:Tajawal] text-lg font-normal leading-7">
         أختر خطة اشتراكك الأن
       </p>
-      <div className="flex flex-col-reverse lg:flex-row gap-4 items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
         {packages?.map((item, idx) => (
           <div
             key={idx}
@@ -48,7 +55,7 @@ const SubscribeSec = () => {
               )}
               <Link
                 target="_blank"
-                href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}auth/register?package_id=${item.id}`}
+                href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}?course_id=c3894163-38c0-4894-ab88-123dda6690e9&project_name=${projects_map[idx]}`}
               >
                 <button className="mt-4 mb-2 flex justify-center items-center gap-3 self-stretch bg-[#ED827B] px-8 py-2 rounded-lg text-white font-bold">
                   اشترك الأن
