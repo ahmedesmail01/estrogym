@@ -26,10 +26,10 @@ const AboutDoc = () => {
         alt=""
         width={507}
         height={507}
-        className="!w-[507px] h-[320px] lg:h-[507px] max-w-full"
+        className="!w-[507px] h-[320px] lg:h-[507px] max-w-full object-contain"
       />
       <div className="lg:px-4">
-        <h1 className="lg:mb-10 mb-8 text-[#5C56A0] text-right  text-[32px]  font-bold leading-[160%]">
+        <h1 className="lg:mb-10 mb-8 text-[#5C56A0] text-right  text-[32px] font-bold leading-[160%]">
           د.أحمد الدملاوي
         </h1>
         <div>

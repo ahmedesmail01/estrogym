@@ -17,11 +17,11 @@ const ForWhoSec = () => {
         لمن هذا البرنامج؟
       </h1>
       <div className="  flex flex-col-reverse  lg:flex-row lg:gap-[96px] justify-around items-center  ">
-        <div className="flex-1">
+        <div className="flex-1 max-w-full">
           <Image
             src={rightImg}
             alt="image"
-            className="max-h-[841px] object-cover"
+            className="max-h-[841px] max-w-full object-cover"
           />
         </div>
         <div className=" flex-1">
